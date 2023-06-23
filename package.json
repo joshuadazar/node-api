@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "node api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuadazar/node-api.git"
+  },
+  "author": "joshua daza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshuadazar/node-api/issues"
+  },
+  "homepage": "https://github.com/joshuadazar/node-api#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
