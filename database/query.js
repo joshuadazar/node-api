@@ -16,7 +16,10 @@ module.exports = (req, res) => {
     }
 
     console.log(req.params.id)
-    res.send(String(results.rows[0].name))
+    const html = `<h1>${process.env.DATABASE_URL}</h1>
+     <button>${results.rows[0].name}</button>
+    `
+    res.send(html)
   
   });
 }
