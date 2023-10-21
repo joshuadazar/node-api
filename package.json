@@ -19,7 +19,11 @@
   "homepage": "https://github.com/joshuadazar/node-api#readme",
   "dependencies": {
     "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "pg": "^8.11.3",
+    "psql": "^0.0.1",
+    "rxjs": "^7.8.1"
   }
 }
