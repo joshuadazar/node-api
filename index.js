@@ -16,8 +16,12 @@ app.get("/data", welcome);
 app.get("/query/:id", query)
 
 app.use('/rnd', async (req, res) => {
+  try {
   const result = await pool.query('SELECT NOW()')
   res.send(result.rows[0])
+  } catch(err) {
+    res.send(err)
+  }
 });
 
 app.listen(port, () => console.log(`Server on http://localhost:${port}`));
